@@ -228,12 +228,13 @@
 .main-header-container .nav-header .profile-block .SC-Profile-container hr {
 	color: #9B9B9B
 }
+
 .main-header-container .nav-header .profile-block .SC-Profile-container button {
 	height: 40px;
 	width: 180px;
 	border-radius: 50px;
-	background: #008e54;
-	border: 1px solid #008e54;
+	background: #4b535a;
+	border: 1px solid #4b535a;
 	color: #fff!important;
 	font-size: 16px;
 	font-weight: 900;
@@ -357,8 +358,12 @@
   margin-right: 20px;
   border: 1px solid #008c53;
 }
+.main-body-container .right-body .Main-TwoBox-Devision .Selling-phase .chart-main{
+width: 100%;
+display: flex;
+}
 .main-body-container .right-body .Main-TwoBox-Devision .Selling-phase label {
-	font-size: 16px; 
+	font-size: 14px; 
 	font-weight: normal !important;
 	margin-right: 15px;
 	color: #5b5957;
@@ -378,6 +383,145 @@ input[type=text], select {
     right: 2px;
     font-size: 11px;
 }
+
+ .Selling-phase .chart-wrap {
+  width: 70%;
+  overflow: hidden;
+  padding-top: 30px;
+  position: relative;
+}
+
+ .Selling-phase .date-picker{
+ 	width: 20%;
+ }
+ 
+.Selling-phase .org-top {
+    width: 30%;
+    /*margin: 0 auto;*/
+    background: #53c653;
+    padding: 10px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    /*border: #ccc solid 2px;*/
+    position: relative;
+    z-index: 1;
+    box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.4);
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)!important;
+}
+
+.Selling-phase .org-top p,
+.Selling-phase .org-mid p {
+  margin: 0 !important;
+  padding: 0;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+/*.Selling-phase .org-top p:hover{
+        height: 50px !important;
+        text-align: center !important;
+        padding: 7% 0%;
+        font-weight: bold; 
+        font-size: 18px;}*/
+
+.Selling-phase .split-lineBox {
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 25px;
+}
+
+.Selling-phase .org-spliter {
+    width: 25px;
+    height: 2px;
+    background: #008c53;
+    position: absolute;
+    top: 70%;
+    right: 66%;
+}
+
+.Selling-phase .org-mid {
+  background: #f1f1f1;
+  padding: 10px;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+/*  border: #ccc solid 2px;*/
+  width: 40%;
+  float: left;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.Selling-phase .org-mid-bot {
+  width: 100% !important;
+}
+
+.Selling-phase .vertical-split {
+  width: 50%;
+  height: 25px;
+  border-top: #008c53 solid 2px;
+  margin: 0 auto;
+  border-left: #008c53 solid 2px;
+  border-right: #008c53 solid 2px;
+  overflow: hidden;
+}
+
+.Selling-phase .org-vert-cent {
+  width: 50%;
+  height: 2px;
+  background: #008c53;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+}
+.Selling-phase .hor-spliter {
+  width: 17%;
+  position: absolute;
+  height: 60px;
+  border-right: #008c53 solid 2px;
+  top: 0;
+}
+
+.Selling-phase .org-ver-bot {
+  position: absolute;
+  top: 46%;
+  width: 10%;
+  height: 2px;
+  background: #ccc;
+  left: 78px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-body-container .right-body .Main-TwoBox-Devision .Probability-tool{
 width: 33%;
   height: auto;
@@ -399,7 +543,7 @@ width: 33%;
 
 
 .Probability-tool .donut-size{
-    font-size: 10em !important;
+    font-size: 8em !important;
 }
 
 .Probability-tool .donut-size .pie-wrapper{    
@@ -445,11 +589,11 @@ width: 33%;
     line-height: 2.6em !important;
     text-align: center !important;
     cursor: default;
-    z-index: 2;}
+    }
 
 .Probability-tool .smaller{
     	padding-bottom: 20px;
-        color: #BDC3C7;
+        color: #008C53;
         font-size: .45em;
         vertical-align: super;
     }
@@ -464,14 +608,14 @@ width: 33%;
 
 .Probability-tool #percent{
     display: block;
-    width: 90px !important;
+    width: 75px !important;
     border: 1px solid #CCC;
-    border-radius: 5px;
     margin: 18px auto 0px;
-    /* padding: 10px; */
+    padding: 2px 5px !important;
     color: #008C53;
-    font-size: 25px;
+    font-size: 15px !important;
     text-align: left;
+    border-radius: 0px !important;
 
 }
    
@@ -482,7 +626,17 @@ width: 33%;
     color: #595959 !important;
     font-size: 15px;
     text-align: center;
+        padding: 7px !important;
 }
+.Probability-tool table tbody tr .big-font{
+    background-color: #BDC3C7;
+    text-align: right !important;
+    font-size: 20px;
+    padding: 7px !important;
+    margin-bottom: 5px;
+
+}
+
 .SC-SO-panel {
 	background: #6c6c6c;
 	padding: 0px !important;
@@ -589,7 +743,7 @@ width: 33%;
     border-style: solid !important;
     border-color: rgba(204, 203, 203, 1) !important;
     padding: 2px  5px !important;
-    width: 250px !important;
+    width:75% !important;
     border-radius: 0px !important;
     box-shadow: none !important;
 }

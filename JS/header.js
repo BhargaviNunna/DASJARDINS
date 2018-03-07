@@ -27,6 +27,15 @@
         $("#Remarks-expand-collapse").addClass('iconOpen');
         $("#Remarks-expand-collapse").removeClass('iconClosed');
     });
+        $("#SC-profile").click(function() {
+        $(".SC-Profile-container").toggle();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).closest('#SC-profile, .SC-Profile-container').length) {
+            $(".SC-Profile-container").hide();
+        }
+    });
 
      $("#CD-dropdown-content").click(function(){
         $("#CD-dropdown-content").attr("src", "../images/Desjardins-close-icone.png");
@@ -65,10 +74,6 @@
 // Pass in a number for the percent
 updateDonutChart('#specificChart', 0, true);
 
-
-
-//Ignore the rest, it's for the input and checkbox
-
 $('#percent').change(function () {
     var percent = $(this).val();
     var donut = $('#donut input').is(':checked');
@@ -89,6 +94,5 @@ $('#donut input').change(function () {
     }
     updateDonutChart('#specificChart', percent, donut);
 });
- 
+});
 
- });

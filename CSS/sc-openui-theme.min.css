@@ -361,6 +361,7 @@
 .main-body-container .right-body .Main-TwoBox-Devision .Selling-phase .chart-main{
 width: 100%;
 display: flex;
+ margin: 12% 5%;
 }
 .main-body-container .right-body .Main-TwoBox-Devision .Selling-phase label {
 	font-size: 14px; 
@@ -386,9 +387,11 @@ input[type=text], select {
 
  .Selling-phase .chart-wrap {
   width: 70%;
-  overflow: hidden;
+/*  overflow: hidden;*/
   padding-top: 30px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
  .Selling-phase .date-picker{
@@ -396,20 +399,27 @@ input[type=text], select {
  }
  
 .Selling-phase .org-top {
-    width: 30%;
+    width: 20%;
     /*margin: 0 auto;*/
-    background: #53c653;
     padding: 10px;
     height: auto;
     border-radius: 5px;
     overflow: hidden;
-    /*border: #ccc solid 2px;*/
+    border: #008C53 solid 2px;
     position: relative;
     z-index: 1;
     box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.4);
-    background-image: linear-gradient(135deg, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0) 100%)!important;
-}
 
+}
+.Selling-phase .rotate-org{
+	/*position: relative;*/
+}
+.Selling-phase .rotate-org .org-top{
+	position: absolute;
+    width: 20%;
+   top: 0px;
+    right: 17px;
+    }
 .Selling-phase .org-top p,
 .Selling-phase .org-mid p {
   margin: 0 !important;
@@ -420,15 +430,11 @@ input[type=text], select {
   float: left;
   text-align: center;
   cursor: pointer;
-  color: #fff;
 }
 
-/*.Selling-phase .org-top p:hover{
-        height: 50px !important;
-        text-align: center !important;
-        padding: 7% 0%;
-        font-weight: bold; 
-        font-size: 18px;}*/
+.Selling-phase .org-top:hover{
+     background-color: #008c53;
+     color: #fff !important;}
 
 .Selling-phase .split-lineBox {
   position: relative;
@@ -441,7 +447,6 @@ input[type=text], select {
     width: 25px;
     height: 2px;
     background: #008c53;
-    position: absolute;
     top: 70%;
     right: 66%;
 }
@@ -743,7 +748,7 @@ width: 33%;
     border-style: solid !important;
     border-color: rgba(204, 203, 203, 1) !important;
     padding: 2px  5px !important;
-    width:75% !important;
+    width:250px !important;
     border-radius: 0px !important;
     box-shadow: none !important;
 }

@@ -18,8 +18,7 @@
         $("#Activities-expand-collapse").removeClass('iconClosed');
     });
 
-
-      $("#Remarks-info").on("hide.bs.collapse", function() {
+        $("#Remarks-info").on("hide.bs.collapse", function() {
         $("#Remarks-expand-collapse").addClass('iconClosed');
         $("#Remarks-expand-collapse").removeClass('iconOpen');
     });
@@ -27,6 +26,7 @@
         $("#Remarks-expand-collapse").addClass('iconOpen');
         $("#Remarks-expand-collapse").removeClass('iconClosed');
     });
+
         $("#SC-profile").click(function() {
         $(".SC-Profile-container").toggle();
     });
@@ -36,6 +36,7 @@
             $(".SC-Profile-container").hide();
         }
     });
+    
 
      $("#CD-dropdown-content").click(function(){
         $("#CD-dropdown-content").attr("src", "../images/Desjardins-close-icone.png");

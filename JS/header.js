@@ -27,6 +27,16 @@
         $("#Remarks-expand-collapse").removeClass('iconClosed');
     });
 
+  $('.org-top').click(function(){
+    $('.org-top').removeClass("active");
+    $(this).addClass("active");
+});
+
+
+
+
+
+
         $("#SC-profile").click(function() {
         $(".SC-Profile-container").toggle();
     });
@@ -48,6 +58,12 @@
         $("#Contact-details-menu-1-hide").hide();
         $("#CD-dropdown-content").show();     
     });
+
+     $(".tab").click(function () {
+    $(".tab").removeClass("active");
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).addClass("active");   
+});
 
 
      function updateDonutChart (el, percent, donut) {

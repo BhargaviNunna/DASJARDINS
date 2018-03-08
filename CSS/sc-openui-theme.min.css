@@ -369,6 +369,11 @@ display: flex;
 	margin-right: 15px;
 	color: #5b5957;
 }
+.main-body-container .right-body .Main-TwoBox-Devision .Selling-phase input{
+	    width: 80% !important;
+    font-size: 12px !important;
+    padding: 5px !important;
+}
 input[type=text], select {
  	 width: 65%;
     padding: 10px 10px;
@@ -420,6 +425,28 @@ input[type=text], select {
    top: 0px;
     right: 17px;
     }
+ .Selling-phase .rotate-org #rotate1{
+ 	transform: rotate(145deg);
+ 	margin-top: -10px;
+ 	width: 40px;     
+ 	margin-left: -4px;
+ }
+  .Selling-phase .rotate-org #rotate2{
+ transform: rotate(-145deg); 
+ margin-top: 21px;
+ width: 40px;     
+ margin-left: -4px;
+ }
+ .Selling-phase .rotate-org #rotate-box1{
+top: 0px;
+right: 23px;
+position: absolute;
+ }
+ .Selling-phase .rotate-org #rotate-box2{
+top: 50px;
+right: 23px;
+position: absolute;
+ }
 .Selling-phase .org-top p,
 .Selling-phase .org-mid p {
   margin: 0 !important;
@@ -432,7 +459,7 @@ input[type=text], select {
   cursor: pointer;
 }
 
-.Selling-phase .org-top:hover{
+.active{
      background-color: #008c53;
      color: #fff !important;}
 
@@ -1033,7 +1060,7 @@ text-align: right !important;
 }
 .main-body-container .right-body .Contact-details .Contact-details-right{
 	width: 74%;
-	height: 280px;
+	height: 288px;
 	border: 1px solid #008C53;
     font-style: normal;
     font-size: 13px;

@@ -39,10 +39,17 @@
     
 
      $("#CD-dropdown-content").click(function(){
-        $("#CD-dropdown-content").attr("src", "../images/Desjardins-close-icone.png");
-        $("#Contact-details-menu-1-hide").toggle();
-         
+        $("#CD-updown-content").show();
+        $("#Contact-details-menu-1-hide").show();
+        $("#CD-dropdown-content").hide();     
     });
+     $("#CD-updown-content").click(function(){
+        $("#CD-updown-content").hide();
+        $("#Contact-details-menu-1-hide").hide();
+        $("#CD-dropdown-content").show();     
+    });
+
+
      function updateDonutChart (el, percent, donut) {
     percent = Math.round(percent);
     if (percent > 100) {

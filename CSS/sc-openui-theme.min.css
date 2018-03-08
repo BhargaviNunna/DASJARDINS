@@ -369,6 +369,28 @@ display: flex;
 	margin-right: 15px;
 	color: #5b5957;
 }
+.main-body-container .right-body .Main-TwoBox-Devision .Selling-phase .Selling-phase-image{
+position: relative;
+padding-top: 10px;
+}
+.main-body-container .right-body .Main-TwoBox-Devision .Selling-phase .Selling-phase-image img{
+position: absolute;
+    transform: rotate(-90deg);
+    top: -190px;
+    left: 260px;
+}
+.SC-SO-panel-body .product-list-table .table tbody td input{
+	    width: 25px !important;
+    vertical-align: text-bottom;
+}
+.main-body-container .right-body .Main-TwoBox-Devision .Selling-phase .Selling-phase-image p{
+    top: 70px;
+    left: 245px;
+    position: absolute;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
 .main-body-container .right-body .Main-TwoBox-Devision .Selling-phase input{
 	    width: 80% !important;
     font-size: 12px !important;
@@ -417,7 +439,7 @@ input[type=text], select {
 
 }
 .Selling-phase .rotate-org{
-	/*position: relative;*/
+	position: relative;
 }
 .Selling-phase .rotate-org .org-top{
 	position: absolute;
@@ -427,7 +449,7 @@ input[type=text], select {
     }
  .Selling-phase .rotate-org #rotate1{
  	transform: rotate(145deg);
- 	margin-top: -10px;
+ 	margin-top: -3px;
  	width: 40px;     
  	margin-left: -4px;
  }
@@ -438,14 +460,16 @@ input[type=text], select {
  margin-left: -4px;
  }
  .Selling-phase .rotate-org #rotate-box1{
-top: 0px;
-right: 23px;
-position: absolute;
+    top: -40px;
+    right: -95px;
+    position: absolute;
+    width: 100px !important;
  }
  .Selling-phase .rotate-org #rotate-box2{
-top: 50px;
-right: 23px;
-position: absolute;
+ top: 15px;
+    right: -95px;
+    position: absolute;
+    width: 100px !important;
  }
 .Selling-phase .org-top p,
 .Selling-phase .org-mid p {

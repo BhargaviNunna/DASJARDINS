@@ -438,6 +438,15 @@ input[type=text], select {
     box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.4);
 
 }
+.Selling-phase .org-top-date{
+      position: absolute;
+    top: 90px;
+    padding: 0px 15px;
+    font-weight: 700;
+    font-style: normal;
+    color: #595959;
+    font-size: 14px;
+} 
 .Selling-phase .rotate-org{
 	position: relative;
 }

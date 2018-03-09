@@ -7,6 +7,7 @@
     <script type="text/javascript" src="../jquery/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/sc-openui-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap-select.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -82,14 +83,15 @@
                                 <label>Opportunity name :</label>
                                 <input type="text" value="Preparing to buy a first house" class="selling-input">
                                 <div class="Selling-phase-image">
-                                <img src="../images/seller-image.png" class="image-responsive">
-                                <p>Selling phase</p>
+                                    <img src="../images/seller-image.png" class="image-responsive">
+                                    <p>Selling phase</p>
                                 </div>
                                 <div class="chart-main">
                                     <div class="chart-wrap">
                                         <div class="org-top active">
                                             <p>Prospection</p>
                                         </div>
+                                        <div class="org-top-date">22-12-2018</div>
                                         <div class="org-spliter"></div>
                                         <div class="org-top">
                                             <p>Qualification</p>
@@ -100,7 +102,7 @@
                                         </div>
                                         <div class="rotate-org">
                                             <div class="org-spliter" id="rotate1"></div>
-                                            <div class="org-spliter"  id="rotate2"></div>
+                                            <div class="org-spliter" id="rotate2"></div>
                                             <div class="org-top" id="rotate-box1">
                                                 <p>Sale</p>
                                             </div>
@@ -184,7 +186,7 @@
                                     <div class="product-buttons">
                                         <button class="btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus add-margin"></i> Add</button>
                                         <button class="btn"><i class="fa fa-trash"></i> Remove</button>
-                                        <button class="btn"><i class="fa fa-search"></i> Search</button>
+                                        <button class="btn" data-toggle="modal" data-target="#product-search"><i class="fa fa-search"></i> Search</button>
                                     </div>
                                     <div class="product-search">
                                         <div class="product-numbers">7 Products</div>
@@ -216,7 +218,8 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td> <input type="checkbox" value="">Saving</td>
+                                                    <td>
+                                                        <input type="checkbox" value="">Saving</td>
                                                     <td>Loan products</td>
                                                     <td>1</td>
                                                     <td>200 000,00$</td>
@@ -226,7 +229,8 @@
                                                     <td>2017-12-22</td>
                                                 </tr>
                                                 <tr>
-                                                    <td> <input type="checkbox" value="">Saving</td>
+                                                    <td>
+                                                        <input type="checkbox" value="">Saving</td>
                                                     <td>Loan products</td>
                                                     <td>1</td>
                                                     <td>200 000,00$</td>
@@ -236,7 +240,8 @@
                                                     <td>2017-12-22</td>
                                                 </tr>
                                                 <tr>
-                                                    <td> <input type="checkbox" value=""> Saving</td>
+                                                    <td>
+                                                        <input type="checkbox" value=""> Saving</td>
                                                     <td>Loan products</td>
                                                     <td>1</td>
                                                     <td>200 000,00$</td>
@@ -246,7 +251,8 @@
                                                     <td>2017-12-22</td>
                                                 </tr>
                                                 <tr>
-                                                    <td> <input type="checkbox" value="">Saving</td>
+                                                    <td>
+                                                        <input type="checkbox" value="">Saving</td>
                                                     <td>Loan products</td>
                                                     <td>1</td>
                                                     <td>200 000,00$</td>
@@ -256,7 +262,8 @@
                                                     <td>2017-12-22</td>
                                                 </tr>
                                                 <tr>
-                                                    <td> <input type="checkbox" value="">Saving</td>
+                                                    <td>
+                                                        <input type="checkbox" value="">Saving</td>
                                                     <td>Loan products</td>
                                                     <td>1</td>
                                                     <td>200 000,00$</td>
@@ -266,7 +273,8 @@
                                                     <td>2017-12-22</td>
                                                 </tr>
                                                 <tr>
-                                                    <td> <input type="checkbox" value="">Saving</td>
+                                                    <td>
+                                                        <input type="checkbox" value="">Saving</td>
                                                     <td>Loan products</td>
                                                     <td>1</td>
                                                     <td>200 000,00$</td>
@@ -275,7 +283,6 @@
                                                     <td>Need follow up</td>
                                                     <td>2017-12-22</td>
                                                 </tr>
-
                                             </tbody>
                                         </table>
                                     </div>
@@ -387,6 +394,35 @@
                                         </div>
                                     </div>
                                     <!--Add Product Pop-up ends here-->
+                                    <!--search Product Pop-up starts here-->
+                                    <div class="container">
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="product-search" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <div class="modal-title">Search</div>
+                                                    </div>
+                                                    <!--popup starts here-->
+                                                    <div class="modal-body" multiple">
+														                                                      
+														<select class="selectpicker">
+														  <option>Mustard</option>
+														  <option>Ketchup</option>
+														  <option>Relish</option>
+														</select>
+
+
+                                                      
+                                                    </div>
+                                                    <!--Pop-up ends here-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--search Product Pop-up ends here-->
                                 </div>
                                 <!--AddProduct-collapse ends here-->
                             </div>
@@ -442,9 +478,8 @@
                                         </div>
                                     </div>
                                     <img class="Contact-details-downarrow" src="../images/Desjardins-open-icone.png" id="CD-dropdown-content">
-
                                     <img class="Contact-details-uparrow" src="../images/Desjardins-close-icone.png" id="CD-updown-content">
-                                <!--     <img class="Contact-details-downarrow" src="../images/Desjardins-close-icone.png" id="CD-dropdown-content-up"> -->
+                                    <!--     <img class="Contact-details-downarrow" src="../images/Desjardins-close-icone.png" id="CD-dropdown-content-up"> -->
                                 </div>
                             </div>
                             <div class="Contact-details-right">
@@ -786,116 +821,115 @@
                                             <span>rows per page</span>
                                         </div>
                                     </div>
-                               
-                                <!--Add Product Pop-up starts here-->
-                                <div class="container">
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="Remarks" role="dialog">
-                                        <div class="modal-dialog">
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <div class="modal-title">Add a product</div>
+                                    <!--Add Product Pop-up starts here-->
+                                    <div class="container">
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="Remarks" role="dialog">
+                                            <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <div class="modal-title">Add a product</div>
+                                                    </div>
+                                                    <!--popup starts here-->
+                                                    <div class="modal-body">
+                                                        <div class="product-search">
+                                                            <div class="product-numbers">Products 1 to 5 on 35</div>
+                                                            <div class="input-group">
+                                                                <label class="input-title">Search in column(s) :</label>
+                                                                <select class="Add-smallwidth">
+                                                                    <option>All</option>
+                                                                    <option>Product</option>
+                                                                    <option>Product Line</option>
+                                                                    <option>Descrpition</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="AddProduct_search">
+                                                                <label class="input-title">Search by :</label>
+                                                                <input type="text" placeholder="Keywords"><i class="fa fa-search"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!--table starts here-->
+                                                        <div class="product-list-table">
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="right-padding">Product</th>
+                                                                        <th>Product Line</th>
+                                                                        <th>Descrpition</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="">AccèsD transactional</td>
+                                                                        <td>Loyalty services</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="">AccèsD transactional</td>
+                                                                        <td>Loyalty services</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value=""> transactional</td>
+                                                                        <td>Loyalty services</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="">AccèsD transactional</td>
+                                                                        <td>Loyalty services</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="">AccèsD transactional</td>
+                                                                        <td>Loyalty services</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!--table ends here-->
+                                                        <div class="pagination-bottom">
+                                                            <div class="right-content-dropdown">
+                                                                <select>
+                                                                    <option>5</option>
+                                                                    <option>10</option>
+                                                                    <option>25</option>
+                                                                    <option>50</option>
+                                                                    <option>100</option>
+                                                                </select>
+                                                                <span>rows per page</span>
+                                                            </div>
+                                                            <div class="left-content-pagination">
+                                                                <ul class="pagination">
+                                                                    <li class="page-item"><a href="#">❮ Previous</a></li>
+                                                                    <li class="page-item"><a href="#">1</a></li>
+                                                                    <li class="page-item"><a href="#">2</a></li>
+                                                                    <li class="page-item"><a href="#">3</a></li>
+                                                                    <li class="page-item"><a href="#">4</a></li>
+                                                                    <li class="page-item"><a href="#">5</a></li>
+                                                                    <li class="page-item"><a href="#">Next ❯</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="AddProduct-footer">
+                                                            <button type="button" class="btn No-color">Cancel</button>
+                                                            <button type="button" class="btn Add-color">Add Product</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <!--popup starts here-->
-                                                <div class="modal-body">
-                                                    <div class="product-search">
-                                                        <div class="product-numbers">Products 1 to 5 on 35</div>
-                                                        <div class="input-group">
-                                                            <label class="input-title">Search in column(s) :</label>
-                                                            <select class="Add-smallwidth">
-                                                                <option>All</option>
-                                                                <option>Product</option>
-                                                                <option>Product Line</option>
-                                                                <option>Descrpition</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="AddProduct_search">
-                                                            <label class="input-title">Search by :</label>
-                                                            <input type="text" placeholder="Keywords"><i class="fa fa-search"></i>
-                                                        </div>
-                                                    </div>
-                                                    <!--table starts here-->
-                                                    <div class="product-list-table">
-                                                        <table class="table table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="right-padding">Product</th>
-                                                                    <th>Product Line</th>
-                                                                    <th>Descrpition</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type="checkbox" value="">AccèsD transactional</td>
-                                                                    <td>Loyalty services</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type="checkbox" value="">AccèsD transactional</td>
-                                                                    <td>Loyalty services</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type="checkbox" value=""> transactional</td>
-                                                                    <td>Loyalty services</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type="checkbox" value="">AccèsD transactional</td>
-                                                                    <td>Loyalty services</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type="checkbox" value="">AccèsD transactional</td>
-                                                                    <td>Loyalty services</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!--table ends here-->
-                                                    <div class="pagination-bottom">
-                                                        <div class="right-content-dropdown">
-                                                            <select>
-                                                                <option>5</option>
-                                                                <option>10</option>
-                                                                <option>25</option>
-                                                                <option>50</option>
-                                                                <option>100</option>
-                                                            </select>
-                                                            <span>rows per page</span>
-                                                        </div>
-                                                        <div class="left-content-pagination">
-                                                            <ul class="pagination">
-                                                                <li class="page-item"><a href="#">❮ Previous</a></li>
-                                                                <li class="page-item"><a href="#">1</a></li>
-                                                                <li class="page-item"><a href="#">2</a></li>
-                                                                <li class="page-item"><a href="#">3</a></li>
-                                                                <li class="page-item"><a href="#">4</a></li>
-                                                                <li class="page-item"><a href="#">5</a></li>
-                                                                <li class="page-item"><a href="#">Next ❯</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="AddProduct-footer">
-                                                        <button type="button" class="btn No-color">Cancel</button>
-                                                        <button type="button" class="btn Add-color">Add Product</button>
-                                                    </div>
-                                                </div>
+                                                <!--Pop-up ends here-->
                                             </div>
-                                            <!--Pop-up ends here-->
-                                                 </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                             </div>
                             <!--Add Product Pop-up ends here-->
                         </div>
                         <!--AddProduct-collapse ends here-->
@@ -912,10 +946,12 @@
     <div class="overlay" id="overlay" style="display:none">
         <img class="loading" id="loading" src="../Images/loadingAjax.gif">
     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="../js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script type="text/javascript" src="../JS/errorcodes.js"></script>-->
     <script type="text/javascript" src="../JS/header.js"></script>
+    <script type="text/javascript" src="../JS/bootstrap-select.js"></script>
 </body>
 
 </html>

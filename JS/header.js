@@ -1,4 +1,7 @@
  $(document).ready(function() {
+           $('.multiselect').multiselect();     
+
+});
      //payments block
      $("#product-info").on("hide.bs.collapse", function() {
         $("#payments-expand-collapse").addClass('iconClosed');
@@ -28,7 +31,7 @@
     });
 
   $('.org-top').click(function(){
-    $('.org-top').removeClass("active");
+    $('.org-top , p').removeClass("active");
     $(this).addClass("active");
 });
 

@@ -93,22 +93,31 @@
                                         </div>
                                         <div class="org-top-date">22-12-2018</div>
                                         <div class="org-spliter"></div>
+
                                         <div class="org-top">
                                             <p>Qualification</p>
-                                        </div>
+                                        </div>                                       
                                         <div class="org-spliter"></div>
+                                        <div class="org-top-date-Qua">22-12-2018</div>
+
                                         <div class="org-top">
                                             <p>Proposition</p>
                                         </div>
+                                        <div class="org-top-date-Pro">22-12-2018</div>
+
                                         <div class="rotate-org">
                                             <div class="org-spliter" id="rotate1"></div>
                                             <div class="org-spliter" id="rotate2"></div>
+
                                             <div class="org-top" id="rotate-box1">
                                                 <p>Sale</p>
                                             </div>
+                                             <div class="org-top-date-sale">22-12-2018</div>
+                                             
                                             <div class="org-top" id="rotate-box2">
                                                 <p>Refusal</p>
                                             </div>
+                                             <div class="org-top-date-Refusal">22-12-2018</div>
                                         </div>
                                     </div>
                                     <div class="date-picker"></div>
@@ -383,8 +392,9 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+
                                                         <div class="AddProduct-footer">
-                                                            <button type="button" class="btn No-color">Cancel</button>
+                                                            <button type="button" class="btn No-color" data-dismiss="modal">Cancel</button>
                                                             <button type="button" class="btn Add-color">Add Product</button>
                                                         </div>
                                                     </div>
@@ -398,24 +408,63 @@
                                     <div class="container">
                                         <!-- Modal -->
                                         <div class="modal fade" id="product-search" role="dialog">
-                                            <div class="modal-dialog">
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <div class="modal-title">Search</div>
-                                                    </div>
-                                                    <!--popup starts here-->
-                                                    <div class="modal-body" multiple">
-														                                                      
-														<select class="selectpicker">
-														  <option>Mustard</option>
-														  <option>Ketchup</option>
-														  <option>Relish</option>
-														</select>
+                                            <div class="vertical-alignment-helper">
+                                                <div class="modal-dialog">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <div class="modal-title">Search</div>
+                                                        </div>
+                                                        <!--popup starts here-->
+                                                        <div class="modal-body">
 
+                                                            <div class="DJ-input-container-DP">
+                                                            	<div class="DP-List">
+                                                                <label>Product:</label>
+                                                                <select class="SC-input">
+                                                                    <option>Option1</option>
+                                                                    <option>Option2</option>
+                                                                    <option>Option3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="DP-List">
+                                                                <label>Product Line:</label>
+                                                                <select class="SC-input">
+                                                                    <option>Option1</option>
+                                                                    <option>Option2</option>
+                                                                    <option>Option3</option>
+                                                                </select>
+                                                            </div>
+                                                            </div>
+  															<div class="DJ-input-container-DP">
+                                                              <div class="DP-List">
+                                                                <label>First Name:</label>
+                                                                <input class="SC-input" type="text" name="First Name" placeholder="First Name">
+                                                            </div>
 
-                                                      
+                                                              <div class="DP-List">
+                                                                <label>Last Name:</label>
+                                                                 <input class="SC-input" type="text" name="Last Name" placeholder="Last Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="DJ-input-container-DP">
+                                                              <div class="DP-List">
+                                                                 <label>Status:</label>
+                                                                <select class="SC-input">
+                                                                    <option>Option1</option>
+                                                                    <option>Option2</option>
+                                                                    <option>Option3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                            
+                                                           
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn No-color" data-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn Add-color">Search</button>
+                                                        </div>
                                                     </div>
                                                     <!--Pop-up ends here-->
                                                 </div>
@@ -439,8 +488,8 @@
                                             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Action
                                                 <!--<span class="caret"></span>--></button>
                                             <ul class="dropdown-menu custom-dropdown-menu">
-                                                <li><a href="#">Add Contact</a></li>
-                                                <li><a href="#">Remove Contact</a></li>
+                                                <li><a href="">Add Contact</a></li>
+                                                <li><a href="">Remove Contact</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -946,7 +995,6 @@
     <div class="overlay" id="overlay" style="display:none">
         <img class="loading" id="loading" src="../Images/loadingAjax.gif">
     </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="../js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script type="text/javascript" src="../JS/errorcodes.js"></script>-->
